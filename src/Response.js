@@ -5,7 +5,7 @@ class Response extends Component {
     const { top, left } = this.element.getBoundingClientRect()
     this.element.style.setProperty('transform', `translate(${this.props.left - left}px, ${this.props.top - top}px)`)
     this.element.getBoundingClientRect()
-    this.element.style.setProperty('transition', 'transform 0.75s cubic-bezier(0.68, 0.01, 0.245, 1.13)')
+    this.element.style.setProperty('transition', 'transform 0.75s ease-in-out')
     this.element.style.setProperty('opacity', 1)
     this.element.style.setProperty('transform', `translate(0px, 0px)`)
   }
