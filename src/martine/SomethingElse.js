@@ -1,5 +1,6 @@
 import { response, addMessage, setOptions } from '../actions'
 import RetroGame from './RetroGame'
+import NotImplemented from './NotImplemented'
 
 export default dispatch => {
   dispatch(addMessage('Den er grei. Noe annet som kan interessere deg?'))
@@ -7,6 +8,8 @@ export default dispatch => {
     {
       content: 'Overrask meg',
       action: e => {
+        dispatch(response('Overrask meg', e.top, e.left))
+        NotImplemented(dispatch)
       },
     },
     {

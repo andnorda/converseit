@@ -45,13 +45,14 @@ class Message extends Component {
         padding: '6px 12px',
         borderRadius: 3,
         boxShadow: '0px 1px 1px rgba(0, 0, 0, 0.2)',
-        transition: 'width 500ms ease-in-out, height 500ms ease-in-out, transform 200ms ease-in',
+        transition: 'width 500ms ease-in-out, height 500ms ease-in-out, 0.75s cubic-bezier(0.68, 0.01, 0.245, 1.13)',
         overflow: 'hidden',
         transform: 'translate(-60px, 0px)',
       }}>
       <div ref={el => this.dots = el}>...</div>
       <div ref={el => this.contentEl = el} style={{
         display: 'none',
+        overflow: 'hidden',
       }}>{this.props.content}</div>
     </div>
   }

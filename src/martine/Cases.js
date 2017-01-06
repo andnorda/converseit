@@ -1,5 +1,6 @@
 import { response, addMessage, setOptions } from '../actions'
 import Unsure from './Unsure'
+import NotImplemented from './NotImplemented'
 
 export default dispatch => {
   dispatch(addMessage('Laster inn eksempel-prosjekter, bloggposter eller liknende..'))
@@ -7,11 +8,15 @@ export default dispatch => {
     {
       content: 'Kult, hva mer?',
       action: e => {
+        dispatch(response('Kult, hva mer?', e.top, e.left))
+        NotImplemented(dispatch)
       },
     },
     {
       content: 'Tøft, ta meg til testen!',
       action: e => {
+        dispatch(response('Tøft, ta meg til testen!', e.top, e.left))
+        NotImplemented(dispatch)
       },
     },
     {

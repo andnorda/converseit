@@ -37,7 +37,7 @@ class Options extends Component {
           justifyContent: 'center',
           flexWrap: 'wrap',
           transform: 'translate(0px, 250px)',
-          transition: 'transform 500ms ease-in',
+          transition: 'transform 750ms cubic-bezier(0.68, 0.01, 0.245, 1.13)',
         }}>
         {this.props.options.map((option, i) =>
           <div
