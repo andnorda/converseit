@@ -1,6 +1,4 @@
-import { response, addMessage, setOptions } from '../actions'
-import Project from './Project'
-import NotImplemented from './NotImplemented'
+import { addMessage, setOptions } from '../actions'
 
 export default dispatch => {
   dispatch(addMessage('Ikke implementert'))

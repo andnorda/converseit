@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Scroll from 'react-scroll'
 
 class Message extends Component {
   showContent = () => {
@@ -27,7 +28,8 @@ class Message extends Component {
         this.element.style.setProperty('height', h1 + 'px')
         this.element.style.setProperty('width', w1 + 'px')
         const { top } = this.element.getBoundingClientRect()
-        window.scrollTo(0, top - 100)
+        const scroll = Scroll.animateScroll
+        scroll.scrollTo(top - 100)
         setTimeout(() => {
           this.showContent()
         }, 500)

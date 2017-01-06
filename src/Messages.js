@@ -31,7 +31,7 @@ function content(message) {
 const Messages = ({ messages }) =>
   <ul style={{
     minHeight: 600,
-    paddingBottom: 200,
+    paddingBottom: 300,
   }}>
     {messages.map((message, i) =>
       <li key={i}>
