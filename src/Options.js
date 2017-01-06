@@ -14,7 +14,7 @@ class Options extends Component {
       this.element.getBoundingClientRect()
       this.element.style.setProperty('transform', 'translate(0px, 250px)')
       this.element.getBoundingClientRect()
-      this.element.style.setProperty('transition', 'transform 800ms ease-in')
+      this.element.style.setProperty('transition', 'transform 500ms ease-in-out')
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -37,7 +37,7 @@ class Options extends Component {
           justifyContent: 'center',
           flexWrap: 'wrap',
           transform: 'translate(0px, 250px)',
-          transition: 'transform 0.75s ease-in-out',
+          transition: 'transform 500ms ease-in-out',
         }}>
         {this.props.options.map((option, i) =>
           <div

@@ -45,7 +45,7 @@ class Message extends Component {
         padding: '6px 12px',
         borderRadius: 3,
         boxShadow: '0px 1px 1px rgba(0, 0, 0, 0.2)',
-        transition: 'width 500ms ease-in-out, height 500ms ease-in-out, transform 0.75s ease-in-out',
+        transition: 'width 500ms ease-in-out, height 500ms ease-in-out, transform 500ms ease-in-out',
         overflow: 'hidden',
         transform: 'translate(-60px, 0px)',
       }}>
