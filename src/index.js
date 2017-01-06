@@ -32,7 +32,8 @@ window.startTest = () => {
   )
 }
 
-document.getElementById('root').innerHTML = `<div>Dette er en eksperiment.</div>
+document.getElementById('root').innerHTML = `<div style="margin: 10px;">
+<div>Dette er et eksperiment.</div>
 <br/>
 <div>Med utgangspunkt i disse ordene:</div>
 <div>Gjennomsiktig</div>
@@ -44,4 +45,5 @@ document.getElementById('root').innerHTML = `<div>Dette er en eksperiment.</div>
 <br/>
 <div>ønsker vi å sammen utfordre rammene for hva en hjemmeside kan være.</div>
 <br/>
-<div onClick="window.startTest()" style="color: blue;">Start eksperimentet</div>`
+<div onClick="window.startTest()" style="color: blue;">Start eksperimentet</div>
+</div>`
